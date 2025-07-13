@@ -1,6 +1,6 @@
 flask
 numpy
-tensorflo
+tensorflow
 scikit-learn
 matplotlib
 pandas
