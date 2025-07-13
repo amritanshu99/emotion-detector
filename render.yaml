@@ -1,8 +1,6 @@
 services:
   - type: web
     name: emotion-api
-    env: python
-    buildCommand: |
-      echo "python-3.10.13" > runtime.txt
-      pip install -r requirements.txt
+    runtime: python
+    buildCommand: ./build.sh
     startCommand: gunicorn emotion_api:app
