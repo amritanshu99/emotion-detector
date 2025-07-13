@@ -48,5 +48,8 @@ def predict():
     })
 
 # ✅ Run the app
+# For Gunicorn: No need to run manually
+# For local testing: this block will work
 if __name__ == "__main__":
-    app.run(debug=True)
+    print("✅ Running Flask dev server...")
+    app.run(host="0.0.0.0", port=5000)
