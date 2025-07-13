@@ -47,6 +47,9 @@ def predict():
         "confidence": round(confidence, 2)
     })
 
+@app.route("/ping", methods=["GET"])
+def ping():
+    return jsonify({"message": "pong"}), 200
 # ✅ Run the app
 # For Gunicorn: No need to run manually
 # For local testing: this block will work
